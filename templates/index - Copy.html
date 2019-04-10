@@ -10,8 +10,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <!-- Calling java script novel JS to rotate images-->
-  <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 
 <style>
@@ -39,8 +37,7 @@ h1 {
 <nav class="navbar navbar-inverse ">
   <div class="container-fluid">
     <div class="navbar-header">
-     <!--  <a class="navbar-brand" href="index.html" title="Home" 	>RentQuest</a> -->
-	  <a class="navbar-brand" title="Home" 	>RentQuest</a>
+      <a class="navbar-brand" href="index.html" title="Home" 	>RentQuest</a>
 	  
     </div>
     <ul class="nav navbar-nav navbar-right">
@@ -67,39 +64,22 @@ h1 {
   <div class="row content">  
 	
     <div class="col-sm-12 text-left bg-lightgrey" >  
-	     
-		 <div class="row"> 
-			<div class="column">
-			
-			    
-				<img class="property" src="static/images/mainimage.jpg" width="100%">
-				<img class="property" src="static/images/image1.jpg" width="100%">
-				<img class="property" src="static/images/image2.jpg" width="100%">
-				<img class="property" src="static/images/image3.jpg" width="100%">
-				<!-- <img src="{{url_for('static', filename='image2.jpg')}}" -->
-				
-				
-				
-
-			</div>
-			
-		</div>
 		
 		<h1>Bay Area Rental</h1>
 	
 	  <hr>	
-	  
+	  <p><img src="output_data/Latitude_MaxTemp.png" alt="Max" style="width:300px;height:300px;margin-right:15px;">
 	
-      <p style="font-size:20px;">Find a perfect rental in Bay area can be a challange.
-	  <p style="font-size:20px;">So many online services
-	  <p style="font-size:20px;">Where to look ?
-	  <p style="font-size:20px;">Which location has the best deals ?
-	  <p> </p>
-	  Here we have analyzed more than 14000 various active bay area rentals and organized them under various categories to help you find a dream place.
-	  
+      <p style="font-size:20px;">The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, 
+	  data was first pulled from the OpenWeatherMap API, then over 500 cities accross the world was randomly used to assemble the dataset.
 	  <br>
 	  <br>
+After assembling the dataset, Matplotlib was used to plot various aspects of the weather vs. latitude. <br>
+Factors we looked at included:<br>
+<br>
+Temperature, cloudiness, wind speed and humidity.<br><br>
 
+This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.<br>
 
 </p>
       
@@ -113,8 +93,9 @@ h1 {
     <div class="col-sm-12" style="background-color:lavender;">
     <br>
 	<h1>Bay Area Rental Statistics</h1>
-
-<h2>Rental visualizations<h2>
+This is the area where graphs will be displayed<br>
+<br>
+Temperature, cloudiness, wind speed and humidity.<br><br>
 
 This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.<br>
 
@@ -140,9 +121,7 @@ This site provides the source data and visualizations created as part of the ana
       <div id="bubble"></div>
     </div>
   </div>
-  <script>
-    w3.slideshow(".property", 1900);
-</script>
+
   <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
   <script type="text/javascript" src="static/js/config.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
